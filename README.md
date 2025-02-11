@@ -1,9 +1,10 @@
-```markdown
+
 # AI Analyzer for Burp Suite
 
 AI Analyzer is a Burp Suite extension that integrates AI capabilities into your web application security testing workflow. The extension analyzes HTTP requests and responses using AI models to provide insights about potential security issues.
 
-## Current Features
+
+## Features
 
 The extension provides automated analysis of HTTP traffic using advanced AI models:
 
@@ -21,26 +22,6 @@ The extension provides automated analysis of HTTP traffic using advanced AI mode
   - Security header analysis
   - Custom analysis with your own prompts
 
-## Features Under Development
-
-Please note that the following features are currently in development and not yet functional:
-
-1. **AI Provider Integration**:
-   - OpenAI integration is planned but not yet implemented
-   - Custom AI provider support is in development
-   - The architecture supports multiple providers, but only Claude is currently functional
-
-2. **Analysis Capabilities**:
-   - Real-time scanning during proxy intercept is planned
-   - Batch analysis of multiple requests is under development
-   - Export functionality for analysis results is coming soon
-
-3. **User Interface Enhancements**:
-   - Customizable scanning rules interface
-   - Advanced filtering of results
-   - Detailed vulnerability reporting templates
-
-We are actively working on these features and will update the documentation as they become available. For now, the extension functions primarily with Claude's AI capabilities for individual request analysis.
 
 ## Installation
 
@@ -63,9 +44,7 @@ After installation:
 4. Choose your analysis type:
    - Vulnerability Scan
    - Security Headers Check
-   - Custom Prompt
-
-## Usage
+   - Custom Prompt## Usage
 
 The extension integrates into your normal Burp Suite workflow:
 
@@ -98,13 +77,11 @@ git clone https://github.com/Chinthan-Rk/AI-analyzer-for-Burpsuite.git
 cd AI-analyzer-for-Burpsuite
 mvn clean package
 ```
+The compiled JAR will be in the target directory.
 
-The compiled JAR will be in the `target` directory.
 
-### Project Structure
-
+## Project Structure
 ```
-src/
 ├── main/
 │   └── java/
 │       └── org/
@@ -115,20 +92,39 @@ src/
 │               ├── http/       # AI Provider Integration
 │               └── model/      # Data Models
 ```
-
 ## Issue Reporting
-
 If you encounter any bugs or issues:
-1. Check existing issues in the GitHub repository
-2. If your issue isn't already reported, create a new issue
-3. Provide detailed information:
-   - Steps to reproduce the problem
-   - Expected behavior
-   - Actual behavior
-   - Error messages if any
-   - Your environment details (Burp Suite version, Java version)
+
+- Check existing issues in the GitHub repository
+- If your issue isn't already reported, create a new issue
+- Provide detailed information:
+
+1. Steps to reproduce the problem
+- Expected behavior
+- Actual behavior
+- Error messages if any
+- Your environment details (Burp Suite version, Java version)
+## Features Under Development
+Please note that the following features are currently in development and not yet functional:
+
+**AI Provider Integration**:
+   - OpenAI integration is planned but not yet implemented
+   - Custom AI provider support is in development
+   - The architecture supports multiple providers, but only Claude is currently functional
+
+**Analysis Capabilities**:
+   - Real-time scanning during proxy intercept is planned
+   - Batch analysis of multiple requests is under development
+   - Export functionality for analysis results is coming soon
+
+**User Interface Enhancements**:
+   - Customizable scanning rules interface
+   - Advanced filtering of results
+   - Detailed vulnerability reporting templates
+
+I am actively working on these features and will update the documentation as they become available. For now, the extension functions primarily with Claude's AI capabilities for individual request analysis.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-```
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
